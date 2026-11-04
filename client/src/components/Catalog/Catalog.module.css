@@ -1,0 +1,11 @@
+.catalog {
+    display: flex;
+}
+.catalog_item {
+    border: 1px grey;
+    width: 100px;
+    height: 200px;
+}
+.catalog_item_info {
+    border: 1px grey;
+}

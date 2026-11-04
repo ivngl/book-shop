@@ -1,0 +1,5 @@
+.venv
+__pycache__
+.venv
+.shop.db
+.ruff_cache

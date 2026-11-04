@@ -1,0 +1,46 @@
+.burger {
+
+	
+}
+
+.burger_btn {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.burger_line {
+	width: 30px;
+	height: 3px;
+	background-color: red;
+	transition: .5s;
+}
+
+.burger.open .burger_line:nth-child(1) {
+	transform: translateY(9px) rotate(45deg);
+}
+.burger.open .burger_line:nth-child(2) {
+	opacity: 0;
+}
+.burger.open .burger_line:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg);
+}
+
+.burger_menu {
+	transform: translateX(-100%);
+	transition: .5s;
+	width: 100vw;
+	height: 100vh;
+	background-color: grey;
+}
+.burger.open .burger_menu {
+	transform: translateX(-20%);
+	background-color: red;
+}
